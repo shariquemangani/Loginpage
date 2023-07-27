@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Ruda:wght@400;500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  height: 100%;
+  font-family: "Fasthand", cursive !important;
+  font-family: "Ruda", sans-serif !important;
+  background-image: linear-gradient(to right,white,  skyblue, #8c8eff);;
+}
+
+.pages {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.p1-bg {
+  background-image: linear-gradient(
+    to right,
+    skyblue,
+    skyblue,
+    #8789fa
+  ) !important;
+}
+
+div.parent1 {
+  background-color: white;
+  height: 650px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.parent {
+  background-color: white;
+  height: 650px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.parent div.sub-parent {
+  width: 60%;
+  height: 80%;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+div.sub-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 65%;
+  background-color: rgba(255, 255, 255, 0.329);
+}
+
+div.sub-block2 {
+  width: 80%;
+  height: 70%;
+}
+
+div.sub-block2 h1,
+h4 {
+  color: white;
+}
+
+div.sub-block2 h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+div.sub-block2 h1 span {
+  color: #15154d;
+}
+
+div.sub-block2 h4 {
+  margin-top: 10px;
+}
+
+div.parent div.sub-parent h1 img {
+  width: 40px;
+}
+
+div.parent div.sub-parent p {
+  opacity: 0.6;
+}
+
+div.parent div.sub-parent h1,
+p {
+  margin-bottom: 20px;
+}
+
+div.parent div.sub-parent form {
+  display: flex;
+  flex-direction: column;
+}
+
+.part1,
+.part2 {
+  border-bottom: 1px solid #c9c9c9;
+  width: 100%;
+  margin: 15px auto;
+}
+
+.part1:focus-within,
+.part2:focus-within {
+  border-bottom: 1px solid blACK;
+}
+
+input[type="email"],
+input[type="password"] {
+  border: none;
+  font-size: 15px;
+  outline: none;
+  padding: 10px 0px;
+}
+
+input[type="submit"] {
+  background-image: linear-gradient(to right, skyblue, #6063fa, violet);
+  color: white;
+  border: navajowhite;
+  font-size: 15px;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-image: linear-gradient(to right, violet, #6063fa, skyblue);
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  cursor: pointer;
+  accent-color: #6063fa;
+}
+.part3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.part3 a {
+  background: -webkit-linear-gradient(to right, skyblue, #6063fa, violet);
+  background: linear-gradient(to right, skyblue, #6063fa, violet);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* margin-left: 110px; */
+}
+
+.part4 {
+  width: 100%;
+  display: flex;
+  margin: 15px auto;
+}
+
+/* Change the suggestion selected color to any */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 600000s 0s, color 1s;
+  color: white !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #000000 !important;
+}
+
+div.part5 {
+  display: flex;
+  color: gray;
+}
+
+div.part5 div.subpart {
+  width: 50%;
+  height: 10px;
+  border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+div.part6 {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+div.part6 img {
+  width: 30px;
+}
+
+div.part6 a {
+  color: black;
+  text-decoration: none;
+}
+
+.sub-parent p,
+div.part1,
+div.part2,
+div.part3,
+div.part4,
+div.part6 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* div.part7 {
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    width: 100%;
+} */
+
+@media only screen and (max-width: 600px) {
+  .part3 a {
+    margin-left: 100px;
+  }
+
+  div.parent div.sub-parent {
+    width: 75%;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .part3 a {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: white;
+  }
+
+  div.parent1 {
+    display: none;
+  }
+
+  div.parent {
+    /* height: 100%; */
+    box-shadow: 0px 0px 10px 0px gray;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .part3 a {
+    margin-top: 15px;
+    display: block;
+  }
+}
